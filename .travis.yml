@@ -1,1 +1,6 @@
 language: java
+jdk:
+  - opendjdk8
+
+script: ./javac Sample.java
+        ./java Sample.java
