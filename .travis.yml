@@ -3,7 +3,6 @@ jdk:
   - openjdk8
 
 script: 
-- java --version
 - ls -lrta
 - which java
 - javac Sample.java
