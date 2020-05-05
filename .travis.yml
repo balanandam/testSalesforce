@@ -20,7 +20,7 @@ before_install:
 - mkdir sfdx
 #Install Salesforce CLI
 - wget -qO- $CLIURL | tar xJ -C sfdx --strip-components 1
-- "./sfdx/install"
+- ./sfdx/install
 - export PATH=./sfdx/$(pwd):$PATH
 
 before_script:
@@ -34,6 +34,8 @@ before_script:
 #Be sure to update the package ID (package ID starts with OHo) or package alias here from the sfdx-project.json file
 - export PACKAGENAME="0Ho0N000000CaT3SAK"
 - export PACKAGEVERSION=""
+
+script:
 #outputs CLI version
 - sfdx --version
 #outputs salsforcedx plugin version
