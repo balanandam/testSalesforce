@@ -3,6 +3,8 @@ jdk:
   - openjdk8
 
 script: 
+- ls -lrta
+- tree
 - ./javac Sample.java
 - ./java Sample
 
