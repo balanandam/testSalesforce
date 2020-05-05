@@ -3,8 +3,9 @@ jdk:
   - openjdk8
 
 script: 
+- java --version
 - ls -lrta
-- tree
-- ./javac Sample.java
-- ./java Sample
+- which java
+- javac Sample.java
+- java Sample
 
